@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 
-from models import Book
+from .models import Book
 from lafv.views import ListAPIFilteredView
-from serializers import BookSerializer
+from .serializers import BookSerializer
 
 
 class BookView(ListAPIFilteredView):

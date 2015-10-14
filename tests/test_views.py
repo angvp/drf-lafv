@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import pytest
 from django.core.urlresolvers import reverse
-from models import Author, Book
+from .models import Author, Book
 
 
 @pytest.fixture()
