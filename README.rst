@@ -77,6 +77,6 @@ To build the documentation:
 .. _tox: http://tox.readthedocs.org/en/latest/
 
 .. |build-status-image| image:: https://secure.travis-ci.org/angvp/drf-lafv.svg?branch=master
-   :target: http://travis-ci.org/angvp/lafv?branch=master
+   :target: http://travis-ci.org/angvp/drf-lafv?branch=master
 .. |pypi-version| image:: https://img.shields.io/pypi/v/drf-lafv.svg
    :target: https://pypi.python.org/pypi/drf-lafv
