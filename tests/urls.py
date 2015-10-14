@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from views import BookView
+from .views import BookView
 
 urlpatterns = patterns(
     '',
