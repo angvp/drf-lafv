@@ -1,0 +1,4 @@
+site_name: drf-lafv
+site_description: A better way than DRF proposed for do some basic filters
+repo_url: https://github.com/angvp/drf-lafv
+site_dir: html
