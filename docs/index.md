@@ -1,6 +1,6 @@
 <div class="badges">
-    <a href="http://travis-ci.org/angvp/lafv">
-        <img src="https://travis-ci.org/angvp/lafv.svg?branch=master">
+    <a href="http://travis-ci.org/angvp/drf-lafv">
+        <img src="https://travis-ci.org/angvp/drf-lafv.svg?branch=master">
     </a>
     <a href="https://pypi.python.org/pypi/drf-lafv">
         <img src="https://img.shields.io/pypi/v/drf-lafv.svg">
