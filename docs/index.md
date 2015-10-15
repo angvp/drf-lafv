@@ -21,8 +21,8 @@ A better way than DRF proposed for do some basic filters
 
 ## Requirements
 
-* Python (2.7, <3.5)
-* Django (1.8)
+* Python (2.7,3.2,3.3,3.4, 3.5 -with Django 1.8-)
+* Django (1.7, 1.8)
 * DRF (3.0, 3.1, 3.2)
 
 ## Installation
