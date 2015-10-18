@@ -8,7 +8,7 @@ from .serializers import BookSerializer
 class BookView(ListAPIFilteredView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
-    filter_fields = ('author__nickname', 'isbn')
+    filter_fields = ('id', 'author__nickname', 'isbn')
     custom_filters = ('new', )
 
     def filter_new(self, queryset):

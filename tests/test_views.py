@@ -20,12 +20,30 @@ def create_books():
         }
         Book.objects.create(**book_data)
 
-
+"""
 @pytest.fixture()
 @pytest.mark.django_db
 def delete_books():
     Author.objects.all().delete()
     Book.objects.all().delete()
+"""
+
+
+@pytest.mark.usefixtures('create_books')
+@pytest.mark.django_db
+def test_list_complex_example(client):
+    """
+    This test will check the view ```BookView``` is working against several
+    filters and its returning just one result with a 200 http status_code
+    """
+    url = reverse('api-book-list')
+    filters = {'id': [0, 1, 2],
+               'author__nickname': 'angvp',
+               'isbn': '978-3-16-148410-0',
+               'new': ''}
+    response = client.get(url, filters)
+    assert response.status_code == 200
+    assert len(response.data) == 1
 
 
 @pytest.mark.usefixtures('create_books')
@@ -76,3 +94,4 @@ def test_book_filter_new(client):
     request = client.get(url, {'new': ''})
     assert request.status_code == 200
     assert len(request.data) == 1
+    assert request.data[0]['isbn'] == '978-3-16-148410-0'
