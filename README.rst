@@ -1,7 +1,7 @@
 drf-lafv
 ======================================
 
-|build-status-image| |pypi-version|
+|build-status-image| |pypi-version| |coverage|
 
 Overview
 --------
@@ -127,3 +127,6 @@ To build the documentation:
    :target: http://travis-ci.org/angvp/drf-lafv?branch=master
 .. |pypi-version| image:: https://img.shields.io/pypi/v/drf-lafv.svg
    :target: https://pypi.python.org/pypi/drf-lafv
+.. |coverage| image::
+    https://coveralls.io/repos/angvp/drf-lafv/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/angvp/drf-lafv?branch=master

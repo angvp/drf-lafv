@@ -22,7 +22,12 @@ matrix:
   fast_finish: true
 
 install:
-  - pip install tox
+  - pip install tox coverage coveralls
 
 script:
+    - coverage erase
     - tox -e $TOX_ENV
+
+after_success:
+  - coverage combine
+  - coveralls
