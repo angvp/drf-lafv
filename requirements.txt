@@ -12,4 +12,4 @@ flake8==2.2.2
 wheel==0.38.1
 
 # MkDocs for documentation previews/deploys
-mkdocs==0.11.1
+mkdocs==1.2.3
